@@ -5,6 +5,7 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -40,11 +41,17 @@ public class Knight implements CommandExecutor{
 				
 			p.sendMessage(ChatColor.RED + "You have recieved the Knight kit!");
 			
+			
+            ItemStack KnightSword = new ItemStack(Material.DIAMOND_SWORD);
+            KnightSword.addEnchantment(Enchantment.DAMAGE_ALL, 1);
+			
 			p.getInventory().setHelmet(new ItemStack(Material.IRON_HELMET));
 			p.getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
 			p.getInventory().setLeggings(new ItemStack(Material.IRON_LEGGINGS));
 			p.getInventory().setBoots(new ItemStack(Material.IRON_BOOTS));
+			p.getInventory().addItem(KnightSword);
 			
+		
 			
 			
 			
