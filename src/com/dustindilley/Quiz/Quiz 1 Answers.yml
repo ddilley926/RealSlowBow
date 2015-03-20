@@ -1,0 +1,6 @@
+1. Extends JavaPlugin
+2.if(cmd.getName().equalsIgnoreCase("")){
+3.perenthasis
+4. Player p = (Player) sender;
+5.makes shortcuts
+6.p.sendMessage(ChatColor.AQUA + "Hello");
