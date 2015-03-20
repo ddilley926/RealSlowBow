@@ -15,7 +15,6 @@ public class Standard implements CommandExecutor{
 		if(cmd.getName().equalsIgnoreCase("Standard")){
 			
 		Player p = (Player) sender;
-		
 		p.getInventory().clear();
 		p.getInventory().addItem(new ItemStack(Material.IRON_SWORD));
 		p.getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
