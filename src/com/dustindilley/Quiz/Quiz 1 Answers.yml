@@ -1,6 +1,6 @@
-1. Extends JavaPlugin
-2.if(cmd.getName().equalsIgnoreCase("")){
-3.perenthasis
-4. Player p = (Player) sender;
-5.makes shortcuts
-6.p.sendMessage(ChatColor.AQUA + "Hello");
+1. Extends JavaPlugin **DO NOT CAPITALIZE EXTENDS**
+2.if(cmd.getName().equalsIgnoreCase("")){ **YOU HAD SOME TROUBLE WITH THIS ONE, STUDY.**
+3.perenthasis **paranthesis**
+4. Player p = (Player) sender; **YOU KNOW THIS ONE BY HEART, JUST REMEMBER HOW TO END IT.
+5.makes shortcuts **IT ALSO TELLS BUKKIT THAT THE NEXT LINES ARE A COMMAND**
+6.p.sendMessage(ChatColor.AQUA + "Hello"); **REMEMVER THE PLUS SIGN AND THE THE QUOTATIONS**
