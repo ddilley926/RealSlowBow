@@ -1,4 +1,4 @@
-package com.dustindilley.helloworld;
+package com.dustindilley.HelloWorld;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
