@@ -1,10 +1,12 @@
 package com.dustindilley.KitPvP.kits;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 import com.dustindilley.KitPvP.Main;
 
@@ -16,11 +18,18 @@ public class Knight implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel,
 			String[] args) {
+		Player p = (Player) sender;
 		if(cmd.getName().equalsIgnoreCase("Knight")){
-			
-			Player p = (Player) sender;
+			if(!plugin.Knight.contains(p.getName())){
+				if(!plugin.kitused.contains(p.getName())){
+					//TODO FINISH ADDING THE ON DEATH EVENT IN THE EVENTS CLASS
+				
 			p.sendMessage(ChatColor.RED + "You have recieved the Knight kit!");
 			
+			p.getInventory().setHelmet(new ItemStack(Material.IRON_HELMET));
+			p.getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
+			p.getInventory().setLeggings(new ItemStack(Material.IRON_LEGGINGS));
+			p.getInventory().setBoots(new ItemStack(Material.IRON_BOOTS));
 			
 			
 			
@@ -29,9 +38,14 @@ public class Knight implements CommandExecutor{
 		
 		
 		
-		return false;
+	
+	}else{
+		p.sendMessage(ChatColor.RED + "You already have a kit!");
 	}
 	
-
-	
+	}else{
+		p.sendMessage(ChatColor.RED + "You already have a kit!");
+	}
+		return false;
+	}
 }
