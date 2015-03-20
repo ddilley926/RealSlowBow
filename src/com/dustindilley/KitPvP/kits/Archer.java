@@ -32,7 +32,7 @@ public class Archer implements CommandExecutor{
 				
 			p.sendMessage(ChatColor.RED + "You have recieved the Archer kit!");
 			
-			p.getInventory().setHelmet(new ItemStack(Material.IRON_HELMET));
+			p.getInventory().setHelmet(new ItemStack(Material.CHAINMAIL_HELMET));
 			p.getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
 			p.getInventory().setLeggings(new ItemStack(Material.IRON_LEGGINGS));
 			p.getInventory().setBoots(new ItemStack(Material.IRON_BOOTS));
