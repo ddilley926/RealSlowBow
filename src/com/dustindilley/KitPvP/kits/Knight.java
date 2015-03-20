@@ -22,6 +22,12 @@ public class Knight implements CommandExecutor{
 		if(cmd.getName().equalsIgnoreCase("Knight")){
 			if(!plugin.Knight.contains(p.getName())){
 				if(!plugin.kitused.contains(p.getName())){
+					plugin.Knight.add(p.getName());
+					plugin.kitused.add(p.getName());
+					
+					
+					
+					
 					//TODO FINISH ADDING THE ON DEATH EVENT IN THE EVENTS CLASS
 				
 			p.sendMessage(ChatColor.RED + "You have recieved the Knight kit!");

@@ -8,7 +8,7 @@ public class Main extends JavaPlugin{
 	
 public ArrayList<String> Knight = new ArrayList<String>();
 public ArrayList<String> kitused = new ArrayList<String>();
-
+public ArrayList<String> Archer = new ArrayList<String>();
 
 public void onEnable(){
 	commands();
