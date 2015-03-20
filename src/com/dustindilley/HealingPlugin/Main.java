@@ -14,7 +14,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 		}
 
 
-	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
 		
 	
