@@ -50,6 +50,9 @@ public class Knight implements CommandExecutor{
 			p.getInventory().setLeggings(new ItemStack(Material.IRON_LEGGINGS));
 			p.getInventory().setBoots(new ItemStack(Material.IRON_BOOTS));
 			p.getInventory().addItem(KnightSword);
+				for(int i = 0; i<25; i++)
+					p.getInventory().addItem(new ItemStack(Material.MUSHROOM_SOUP));
+			
 			
 		
 			
