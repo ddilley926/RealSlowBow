@@ -20,6 +20,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 		Player p = (Player) sender;
 		
 		p.setHealth(20);	
+		p.setFoodLevel(50);
+		
 		}
 		return false;
 		
