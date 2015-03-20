@@ -19,12 +19,20 @@ public class Knight implements CommandExecutor{
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel,
 			String[] args) {
 		Player p = (Player) sender;
+	
 		if(cmd.getName().equalsIgnoreCase("Knight")){
+			
 			if(!plugin.Knight.contains(p.getName())){
+			//DUSTIN, REMEMBER THE IMAGINARY NOTEPADS THAT THE SERVER CREATES? THIS IS CHECKING IF THE PLAYER'S NAME IS ON THAT NOTEPAD.	
+				
 				if(!plugin.kitused.contains(p.getName())){
-					plugin.Knight.add(p.getName());
-					plugin.kitused.add(p.getName());
+					//ITS CHECKING ON THIS ONE TOO.
 					
+					plugin.Knight.add(p.getName());
+					//IF THEIR NAME IS NOT ON IT, THE PLUGIN IS ADDING THEM ONTO THE IMAGINARY NOTEPAD/
+					
+					plugin.kitused.add(p.getName());
+					//SAME FOR THIS.
 					
 					
 					
@@ -51,7 +59,9 @@ public class Knight implements CommandExecutor{
 	
 	}else{
 		p.sendMessage(ChatColor.RED + "You already have a kit!");
-	}
+	}//IF THEIR NAME IS ALREADY ON THE LIST, IT'S GOING TO DENY THEM THE KIT.
+		
+		
 		return false;
 	}
 }
