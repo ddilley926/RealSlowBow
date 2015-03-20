@@ -12,10 +12,10 @@ public class Debug extends JavaPlugin{
 			String[] args) {
 		
 		if(cmd.getName().equalsIgnoreCase("Heal")){
-			Player penis = (Player) sender;
-			penis.setHealth(20);
-			penis.setHunger(20);
-			penis.sendMessage(ChatColor.GOLD + "You have been fully healed.");
+			Player p = (Player) sender;
+			p.setHealth(20);
+			p.setFoodLevel(20);
+			p.sendMessage(ChatColor.GOLD + ("You have been fully healed."));
 			
 		}
 		
