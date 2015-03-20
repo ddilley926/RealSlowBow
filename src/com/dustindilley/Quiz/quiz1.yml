@@ -10,3 +10,4 @@ Ex) public boolean onCommand(blah blah blah){
 4.) How do you make the "p" shortcut.
 Ex) "p".sendmessage()
 5.) Explain what the public boolean is.
+6.) Send a message with the chat color "aqua" that says the word "hello
